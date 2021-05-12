@@ -8,6 +8,12 @@ body {
   background-color: #f5f5f5;
   font-family: "Poppins", sans-serif;
   margin: 0;
+  display: flex;
+  color: #444;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
 }
 
 h1 {
@@ -21,11 +27,11 @@ form {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 400px;
   max-width: 100%;
-  margin: auto;
 }
 
 .input {
   border: none;
+  color: #444;
   width: 100%;
   display: block;
   padding: 1rem 2rem;
@@ -52,4 +58,15 @@ form {
   border-top: 1px solid rgba(162, 121, 202, 0.74);
   padding: 1rem 2rem;
   font-size: 1.2rem;
+}
+
+.todos li.completed {
+  text-decoration: line-through 2px #999999;
+  color: #b5b5b5;
+}
+
+small {
+  margin-top: 3rem;
+  color: #b5b5b5;
+  text-align: center;
 }

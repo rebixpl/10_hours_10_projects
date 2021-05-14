@@ -19,6 +19,113 @@ body {
     #0f0c29
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   margin: 0;
+}
+
+input {
+  background-color: #4c2885;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+input:focus {
+  outline: none;
+}
+
+.card {
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #333399,
+    #ff00cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #333399,
+    #ff00cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  max-width: 800px;
+}
+
+.avatar {
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #24243e;
+  width: 150px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.user-info {
+  margin-left: 2rem;
+  color: #fff;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+  list-style-type: none;
+  color: #fff;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  background-color: #24243e;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  box-shadow: 0 1.8px 1.2px rgba(0, 0, 0, 0.034),
+    0 1.7px 1.3px rgba(0, 0, 0, 0.048), 0 1.5px 0.2px rgba(0, 0, 0, 0.06),
+    0 1.3px 1.9px rgba(0, 0, 0, 0.072), 0 1.8px 0.4px rgba(0, 0, 0, 0.086),
+    0 1.2px 1.2px rgba(0, 0, 0, 0.12);
 }

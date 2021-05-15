@@ -48,7 +48,7 @@ body {
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 21.8px 43.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 
-  width: 400px;
+  min-width: 400px;
 }
 
 .pw-header {
@@ -82,7 +82,9 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 2rem;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
   padding: 1rem;
   border-radius: 3px;
 }
@@ -111,6 +113,12 @@ body {
 .pw:hover button {
   opacity: 1;
   transform: translate(-50%, 70%);
+}
+
+.pw-container h1 {
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
 }
 
 .form-control {

@@ -9,16 +9,17 @@
   </head>
   <body>
     <div class="pw-container">
+      <h1>Password Generator</h1>
       <div class="pw-header">
-        <div class="pw" id="pw">
-          43899gfg894h8945e3j#*%(#)
+        <div class="pw">
+          <span id="pw"></span>
           <button id="copy">Copy to clipboard</button>
         </div>
       </div>
       <div class="pw-body">
         <div class="form-control">
-          <label for="len">Password Length (4 - 40)</label
-          ><input id="len" type="number" min="4" max="40" value="20" />
+          <label for="len">Password Length (2 - 30)</label>
+          <input id="len" type="number" min="2" max="30" value="15" />
         </div>
         <div class="form-control">
           <label for="upper">Contain Uppercase Letters</label

@@ -27,9 +27,11 @@ canvas {
   width: 804px;
   background-color: rebeccapurple;
   padding: 1rem;
+  position: relative;
 }
 
-.toolbox button {
+.toolbox button,
+.toolbox form input {
   border: none;
   background-color: #fff;
   border: none;
@@ -40,6 +42,22 @@ canvas {
     0 1.3px 1.9px rgba(0, 0, 0, 0.072), 0 1.8px 0.4px rgba(0, 0, 0, 0.086),
     0 1.2px 1.2px rgba(0, 0, 0, 0.12);
   width: 50px;
+  height: 50px;
+}
+
+#clear {
+  position: absolute;
+  right: 1rem;
+}
+
+.toolbox form {
+  display: inline-block;
+  margin: 0 1rem;
+  position: absolute;
+}
+
+.toolbox form input {
+  padding: 0;
 }
 
 .size-indicator {
